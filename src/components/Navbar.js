@@ -19,30 +19,29 @@ console.log(isOpen);
         <div className={styles.navHeader}>
           <img src={logo} alt="backroads logo" />
           <button type ="button" className={styles.logoBtn} onClick={toggleNav}>
-<FaAlignRight className={styles.logoIcon}/>
+            <FaAlignRight className={styles.logoIcon}/>
           </button>
         </div>
-<ul className={isOpen ? `${styles.navLinks} ${styles.showNav}` : `${styles.navLinks}`}>
-{links.map((item, index) => {
- return (<li key={index}>
-   <Link to={item.path}>{item.text}</Link></li>)
-})}
-</ul>
-<div className={styles.navSocialLinks}>
-{socialIcons.map((item, index)=> {
-  return (
-    <a 
-    key={index} 
-    href={item.url} 
-    target="_blank"
-    rel="noopener noreferrer"
-    >
-    {item.icon}
-    </a>
-  )
-  
-})}
-</div>
+        <ul className={isOpen ? `${styles.navLinks} ${styles.showNav}` : `${styles.navLinks}`}>
+          {links.map((item, index) => {
+          return (<li key={index}>
+            <Link to={item.path}>{item.text}</Link></li>)
+          })}
+        </ul>
+        <div className={styles.navSocialLinks}>
+        {socialIcons.map((item, index)=> {
+          return (
+            <a 
+            key={index} 
+            href={item.url} 
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            {item.icon}
+            </a>
+          )  
+        })}
+        </div>
       </div>
     </nav>
   )
