@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import { FaAdobe } from "react-icons/fa"
+import SimpleHero from "../components/SimpleHero"
 
 export default () => (
   <Layout>
-    <div>Hello from backroads 1</div>
+    <SimpleHero />
   </Layout>
 )
