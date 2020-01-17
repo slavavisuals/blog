@@ -3,7 +3,6 @@ import styles from "../css/footer.module.css"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
 import { Link } from "gatsby"
-import { FaRproject } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
       <div className={styles.links}>
         {links.map((item, index) => {
           return (
-            <Link key={index} to={item.mpat}>
+            <Link key={index} to={item.path}>
               {item.text}
             </Link>
           )
@@ -31,9 +30,10 @@ const Footer = () => {
           )
         })}
       </div>
-<div className={styles.copyright}>
-copyright &copy; slava visuals {new Date().getFullYear()} all right reserved
-</div>
+      <div className={styles.copyright}>
+        copyright &copy; slava visuals {new Date().getFullYear()} all right
+        reserved
+      </div>
     </footer>
   )
 }
