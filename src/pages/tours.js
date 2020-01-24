@@ -7,7 +7,10 @@ export default class tours extends Component {
     return (
       <Layout>
         hello from tours page!!
-        <Button>Hello from Slava</Button>
+        <div>
+          <Button big>first button</Button>
+          <Button color="yellow">second button</Button>
+        </div>
       </Layout>
     )
   }
