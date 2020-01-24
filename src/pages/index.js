@@ -8,10 +8,7 @@ import links from "../constants/links"
 export default () => (
   <Layout>
     <SimpleHero>
-      <Banner
-        title="continue exploring"
-        info="nunc consequat interdum varius sit amet mattis vulputate enim nulla"
-      >
+      <Banner title="continue exploring" info="Here are my intro words">
         <Link to="tours" className="btn-white">
           explore tours
         </Link>
