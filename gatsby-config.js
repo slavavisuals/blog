@@ -5,5 +5,14 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "BackRoads",
+    description: "Explore awesome blog posts",
+    author: "@slavavisuals",
+    data: {
+      name: "john",
+      age: 24,
+    },
+  },
   plugins: [`gatsby-plugin-styled-components`],
 }
