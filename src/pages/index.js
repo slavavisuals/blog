@@ -9,7 +9,7 @@ import Services from "../components/Home/Services"
 export default () => (
   <Layout>
     <SimpleHero>
-      <Banner title="continue exploring" info="Here are my intro words">
+      <Banner title="continue exploring 123" info="Here are my intro words">
         <Link to="tours" className="btn-white">
           explore tours
         </Link>
