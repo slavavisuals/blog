@@ -12,15 +12,9 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-<<<<<<< HEAD
       blogposts: allContentfulBlogpost{
         edges{
           node{
-=======
-      posts: allContentfulPost {
-        edges {
-          node {
->>>>>>> f1272d2d0a85a29b5a71b90c478e065637296369
             slug
           }
         }
@@ -36,7 +30,6 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-<<<<<<< HEAD
   data.blogposts.edges.forEach(({ node })=>{
     createPage({
       path: `blog/${node.slug}`,
@@ -44,15 +37,6 @@ exports.createPages = async ({ graphql, actions }) => {
       context:{
         slug:node.slug,
       }
-=======
-  data.posts.edges.forEach(({ node }) => {
-    createPage({
-      path: `blog/${node.slug}`,
-      component: path.resolve("./src/templates/blog-template.js"),
-      context: {
-        slug: node.slug,
-      },
->>>>>>> f1272d2d0a85a29b5a71b90c478e065637296369
     })
   })
 }
