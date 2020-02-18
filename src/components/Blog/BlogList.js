@@ -22,9 +22,9 @@ query{
     }
   }
 `
-
 const BlogList = () => {
-    const {blogposts} = useStaticQuery(getBlogPosts)
+
+const {blogposts} = useStaticQuery(getBlogPosts)
 console.log(blogposts);
     return (
         <section className={styles.blog}>
@@ -37,5 +37,4 @@ console.log(blogposts);
         </section>
     )
 }
-
 export default BlogList
