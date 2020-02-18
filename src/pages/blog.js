@@ -3,7 +3,11 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+<<<<<<< HEAD
 import BlogList from '../components/Blog/BlogList'
+=======
+import BlogList from "../components/Blog/BlogList"
+>>>>>>> f1272d2d0a85a29b5a71b90c478e065637296369
 
 const blog = ({ data }) => {
   return (
