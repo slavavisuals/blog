@@ -13,6 +13,9 @@ module.exports = {
     title: "BackRoads",
     description: "Explore awesome blog posts",
     author: "@slavavisuals",
+    twitterUsername:"@slavavisuals",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://happy-swanson-57414a.netlify.com",
     data: {
       name: "john",
       age: 24,

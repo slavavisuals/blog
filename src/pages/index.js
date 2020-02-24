@@ -7,8 +7,10 @@ import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import FeaturedTours from "../components/Home/FeaturedTours"
+import SEO from '../components/SEO'
 export default ({ data }) => (
   <Layout>
+    <SEO title="Home" description="this is description" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner title="continue exploring 123" info="Here are my intro words">
         <AniLink fade to="tours" className="btn-white">
