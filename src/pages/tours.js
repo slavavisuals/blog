@@ -4,11 +4,13 @@ import Header from "../examples/RegularHeader"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import Tours from "../components/Tours/Tours"
+import SEO from '../components/SEO'
 
 export default class tours extends Component {
   render() {
     return (
       <Layout>
+        <SEO title="Tours" />
         {/* since it is class based component image gets using this.props */}
         <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
         <Header />
