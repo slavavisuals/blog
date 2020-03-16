@@ -6,6 +6,7 @@ import styles from '../css/blog.module.css'
 import BlogCard from '../components/Blog/BlogCard'
 import Title from '../components/Title'
 import SEO from '../components/SEO'
+import StyledHero from '../components/StyledHero'
 
 
 
@@ -21,6 +22,7 @@ import SEO from '../components/SEO'
       return (
         <Layout>
           <SEO title="Blogs"/>
+          <StyledHero img={data.blogBcg.childImageSharp.fluid} />
           <section className={styles.blog}>
             <Title title="latest" subtitle="posts" />
             <div className={styles.center}>
@@ -79,6 +81,13 @@ import SEO from '../components/SEO'
           }
         }
       }
+      blogBcg: file(relativePath: { eq: "blogBcg.jpeg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 4160) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      } 
     }
     `
 

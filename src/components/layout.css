@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
 
 :root {
-  --primaryColor: #3fd0d4;
+  --primaryColor: #3AA5D2;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBlack: #222;
+  --mainBlack: #272724;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;

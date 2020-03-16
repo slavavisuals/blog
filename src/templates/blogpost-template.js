@@ -6,20 +6,18 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { INLINES } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import SEO from '../components/SEO'
+import StyledHero from "../components/StyledHero"
 
 const Blog = ({ data }) => {
-    //console.log("eto ya:", data.post.text.json.content[1])
-    //content[""0""].value
-    //content[2].content[1].data.uri
-    //console.log(data.post.text.json.content[1].content[0].value);
-    //console.log(data.post.text.json);
     const {
       title,
       published,
       text: { json },
+      image,
       
     } = data.post
-
+    
+    const imgUrl = data.post.image;
     const options = {
       
         renderNode: {
@@ -68,6 +66,7 @@ const Blog = ({ data }) => {
 
     return <Layout>
             <SEO title={title} />
+            <StyledHero img={imgUrl.fluid} />
             <section className={styles.blog}>
               <div className={styles.center}>
                 <h1>{title}</h1>
@@ -88,6 +87,11 @@ const Blog = ({ data }) => {
       published(formatString: "MMMM Do, YYYY")
       text {
         json
+      }
+      image {
+        fluid(quality: 70, maxWidth: 1920) {
+          ...GatsbyContentfulFluid
+        }
       }
     }
   }

@@ -11,7 +11,7 @@ query{
         node{
           published(formatString:"MMMM Do, YYYY ")
           title
-          slug
+          slug          
           image{
             fluid{
               ...GatsbyContentfulFluid
